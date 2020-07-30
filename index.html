@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Aplicativo para conjuntos residenciales">
     <meta name="title" content="Conjuto Residencial">
+    <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Conjuto Residencial</title>
-
 </head>
 <body>
     <main class="container-fluid">
         <header>
-            <section class="row">
-                <article class="col-2"><img class="img-fluid" src="imagenes/logo.png" alt="Logo Conjunto Residencial" srcset=""></article>
+          <section class="row">
+                <article class="col-1 text-center"><img class="img-fluid" id="logo" src="imagenes/logo.png" alt="Logo Conjunto Residencial" srcset=""></article>
                 <article class="col-7">
-
-
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -39,9 +37,47 @@
 
 
                 </article>
-                <article class="col-3">col</article>
+                <article class="col-4">
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                  </form>
+                </article>
+          </section>
+          <section class="row" id="cn_banner">
+            <article class="col-lg-12">
+              <img class="img-fluid card-img" src="Imagenes/banner_img_1.jpg">
+              <div class="card-title">Mensualidad</div>
+              <div class="card-title-1">Conjunto Residencial</div>
+            </article>
           </section>
         </header>
+        <section id="main">
+          <div class="card text-center">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" id="crear-mensualidad-tab" href="#crear-mensualidad">Crear Mensualidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#ver-estadisticas" id="ver-estadisticas-tab">Ver Estadisticas</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="mis-tabs">
+                <div class="tab-pane">
+                  <div class="tab-pane fade show acrtive" id="crear-mensualidad" role="tabpanel" aria-labelledby="ver-estadistica-tab">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                  <div class="tab-pane fade" id="ver-estadisticas" role="tabpanel" aria-labelledby="ver-estadistica-tab"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
