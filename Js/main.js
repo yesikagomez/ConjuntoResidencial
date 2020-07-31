@@ -8,9 +8,7 @@ document.getElementById("btn-guardar-inmueble").addEventListener('click', (e) =>
 }
 );
 
-
-	
-    	
+  	
 $(document).ready((e) => {
     $("#btn-adicionar").click((e) => {
         $('#modal-adicionar').modal('toggle');
