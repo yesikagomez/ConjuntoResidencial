@@ -253,19 +253,56 @@
                               >
                                 <div class="card-header">
                                   Datos de inmueble en la mensualidad
+                                  <div class="card-body">
+                                    <article class="row">
+                                      <article class="col-6">
+                                        <div class="form-group">
+                                          <label for="metros-cuadrados">Metros Cuadrados (*)</label>
+                                          <input type="number" class="form-control" id="metros-cuadrados"
+                                            placeholder="Metros Cuadrados"  />
+                                        </div>
+                                      </article>
+                                      <article class="col-6">
+                                        <div class="form-group">
+    
+                                          <!-- ¿Cómo relaciono el for="tipo" con los input de los radio check y cómo  
+                                          se establece el required-->
+                                          
+                                          <label for="tipo">Tipo (*)</label>
+                                          <div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" value="A" id="tipo_apartamento" name="tipo_inmueble"
+                                                class="custom-control-input">
+                                              <label class="custom-control-label" for="tipo_apartamento">Apartamento</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                              <input type="radio" value="C" id="tipo_casa" name="tipo_inmueble"
+                                                class="custom-control-input">
+                                              <label class="custom-control-label" for="tipo_casa">Casa</label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </article>
+                                    </article>
+                                    <article class="row">
+                                      <article class="col-6">
+                                        <div class="form-group">
+                                          <label for="numero-habitantes">Número de habitantes (*)</label>
+                                          <input type="number" class="form-control" id="numero-habitantes"
+                                            placeholder="Numero de habitantes"  />
+                                        </div>
+                                      </article>
+                                      <article class="col-6">
+                                        <div class="form-group">
+                                          <label for="fecha-mensualidad">Fecha de mensualidad (*)</label>
+                                          <input type="date" class="form-control" id="fecha-mensualidad"  />
+                                        </div>
+                                      </article>
+                                    </article>
+                                  </div>
                                 </div>
-                                <div class="card-body">
-                                  <article class="row">
-                                    <article class="col-6"></article>
-                                    <article class="col-6"></article>
-                                  </article>
-                                  <article class="row">
-                                    <article class="col-6"></article>
-                                    <article class="col-6"></article>
-                                  </article>
-                                </div>
-                              </div>
-                            </form>
+                              </form>
+                            </div>
                           </div>
                           <div class="modal-footer">
                             <button
