@@ -1,3 +1,5 @@
+const DATOS_FORMULARIO = []; 
+
 document.getElementById("btn-guardar-inmueble").addEventListener('click', (e) =>{
 	let nombre_almacenado, documento_almacenado, 
             genero_almacenado, fecha_nac_almacenada,mt_inmueble_almacenado,tipo_inmueble_almacenado, 
@@ -36,7 +38,10 @@ document.getElementById("btn-guardar-inmueble").addEventListener('click', (e) =>
         alert("Error de validación de campos.")
     }
     
-    console.log(inmueble);
+    DATOS_FORMULARIO.push(inmueble);
+    document.getElementById("frm-mensualidad").reset();
+    alert("Los datos fueron almacenados");
+    $('#modal-adicionar').modal('toggle');
 });
    	
 $(document).ready((e) => {
