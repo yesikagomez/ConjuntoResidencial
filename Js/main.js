@@ -1,3 +1,6 @@
+//import {saludarAlPublico, NOMBRE,edad} from './modulo.js';
+// import jsonModulo from './modulo.js';
+import Estudiante from './clases/Estudiante.js';
 const DATOS_FORMULARIO = [
     {
         datos_propietario : {
